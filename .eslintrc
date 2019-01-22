@@ -1,9 +1,9 @@
 {
-  "extends": [
-    "@jedwards1211/eslint-config", "@jedwards1211/eslint-config-flow",
-    "eslint-config-prettier"
-  ],
+  "extends": ["@jedwards1211/eslint-config", "eslint-config-prettier"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "env": {
-    "commonjs": true
+    "node": true
   }
 }
