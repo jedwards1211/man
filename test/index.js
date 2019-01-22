@@ -17,6 +17,6 @@ describe('getManpage', function() {
     expect(getManpage('react')).to.equal('https://reactjs.org/')
   })
   it(`returns local file for opn`, function() {
-    expect(getManpage('opn')).to.equal(require.resolve('opn/README.md'))
+    expect(getManpage('opn')).to.equal(require.resolve('opn/readme.md'))
   })
 })
