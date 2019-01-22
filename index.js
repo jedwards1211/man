@@ -45,7 +45,7 @@ exports.getManpage = getManpage
 // istanbul ignore next
 if (!module.parent) {
   if (!process.argv[2]) {
-    console.error(`Usage: npmman <package>`) // eslint-disable-line no-console
+    console.error(`Usage: open-docs <package>`) // eslint-disable-line no-console
     process.exit(1)
   }
 
