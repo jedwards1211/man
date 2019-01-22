@@ -23,11 +23,17 @@ function getManpage(query) {
       paths: [cwd],
     })
   } catch (error) {
-    if (repo && repo.url) {
-      readme = repo.url.replace(/(\.git)?\/?$/, '#readme')
+    try {
+      readme = require.resolve(`${packageName}/readme.md`, {
+        paths: [cwd],
+      })
+    } catch (error) {
+      if (repo && repo.url) {
+        readme = repo.url.replace(/(\.git)?\/?$/, '#readme')
+      }
     }
   }
-  if (readme && (!homepage || /(#readme|README.md)$/.test(homepage))) {
+  if (readme && (!homepage || /(#readme|readme.md)$/i.test(homepage))) {
     return readme
   }
 
