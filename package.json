@@ -1,5 +1,5 @@
 {
-  "name": "man",
+  "name": "npmman",
   "version": "0.0.0-development",
   "description": "manpage command for npm, opens package homepage or readme",
   "main": "index.js",
@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedwards1211/man.git"
+    "url": "https://github.com/jedwards1211/npmman.git"
   },
   "keywords": [
     "manpage",
@@ -59,9 +59,9 @@
     "documentation"
   ],
   "bugs": {
-    "url": "https://github.com/jedwards1211/man/issues"
+    "url": "https://github.com/jedwards1211/npmman/issues"
   },
-  "homepage": "https://github.com/jedwards1211/man#readme",
+  "homepage": "https://github.com/jedwards1211/npmman#readme",
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",
